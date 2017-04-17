@@ -1,0 +1,33 @@
+﻿@model IEnumerable<app.ViewModels.BlogItemViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h2>Blog Post List</h2>
+    
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div style="border-radius: 6px;padding:10px;border:2px solid #000000;">
+            <h3>
+                @Html.ActionLink(item.Post.Title, "Details", new { id = item.Id })    <small><b>Created Date : </b>@item.Post.CreatedDate</small>
+            </h3>
+            <h5><b>Author</b> : @item.Post.Author</h5>
+            <p> @item.Post.Post.Substring(0, Math.Min(item.Post.Post.Length, 100))</p>
+            <ul class="list-inline">
+                <li>@Html.ActionLink("Read More...", "Details", new { id = item.Id }, new { @class = "btn" }) </li>
+                <li>@Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn" })</li>
+                <li>@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn" })</li>
+            </ul>
+        </div>
+        <hr />
+    }
+    </ div >

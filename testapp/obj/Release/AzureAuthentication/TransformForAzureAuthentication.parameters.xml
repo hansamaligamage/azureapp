@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AD_ClientID" description="AD Client Application ID" defaultValue="d5b7d5cf-0778-4d14-829b-a0b9e2c87160" tags="AD_ClientAPPID">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientId']/@value" />
+  </parameter>
+  <parameter name="AD_ClientPassword" description="AD Client Password" defaultValue="2l7QjsoR2iTPhZkvijlvCCQGFDkXC2xIr7gNgvplaN0=" tags="AD_Password">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientSecret']/@value" />
+  </parameter>
+  <parameter name="AD_TenantId" description="AD Tenant Id" defaultValue="69cf72d8-1483-4221-afd2-bd8ea46e3175" tags="AD_TenantId">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:TenantId']/@value" />
+  </parameter>
+  <parameter name="AD_Domain" description="AD Domain" defaultValue="tprexilesoft.onmicrosoft.com" tags="AD_Domain">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Domain']/@value" />
+  </parameter>
+  <parameter name="AD_PostLogoutRedirectUri" description="AD PostLogoutRedirectUri" defaultValue="https://localhost:44322/" tags="AD_PostLogoutRedirectUri">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:PostLogoutRedirectUri']/@value" />
+  </parameter>
+</parameters>

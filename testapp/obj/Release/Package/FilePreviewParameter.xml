@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="testapp20170323032239" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Server=tcp:azureassignment.database.windows.net,1433;Initial Catalog=assignment;Persist Security Info=False;User ID=blogdbsa;Password=eXile123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AD_APPIDUri" description="" value="https://tprexilesoft.onmicrosoft.com/WebApp-testapp20170323032239.azurewebsites.net" tags="" />
+  <parameter name="AD_ClientID" description="" value="2013b00f-a865-446b-b5a5-35aea5d90cdd" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientId']/@value" />
+  </parameter>
+  <parameter name="AD_MetadataUrl" description="" value="https://login.windows.net/hansamaligamagegmail.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml" tags="" />
+  <parameter name="AD_ClientPassword" description="" value="BOlwfYYdMLC/Zy51QbM/uwu7bcnPkY0zU3Cv2DAh910=" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientSecret']/@value" />
+  </parameter>
+  <parameter name="AD_RealmAppSetting" description="" value="https://tprexilesoft.onmicrosoft.com/WebApp-testapp20170323032239.azurewebsites.net" tags="" />
+  <parameter name="AD_AudienceUriAppSetting" description="" value="https://tprexilesoft.onmicrosoft.com/WebApp-testapp20170323032239.azurewebsites.net" tags="" />
+  <parameter name="AD_TenantId" description="" value="69cf72d8-1483-4221-afd2-bd8ea46e3175" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:TenantId']/@value" />
+  </parameter>
+  <parameter name="AD_Domain" description="" value="hansamaligamagegmail.onmicrosoft.com" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Domain']/@value" />
+  </parameter>
+  <parameter name="AD_PostLogoutRedirectUri" description="" value="https://testapp20170323032239.azurewebsites.net/" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ham\\Desktop\\azure\\ass1\\assss\\testapp\\testapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:PostLogoutRedirectUri']/@value" />
+  </parameter>
+</parameters>
